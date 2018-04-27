@@ -1,0 +1,64 @@
+* {
+  font-family: Highlander;
+}
+
+
+h1 {
+  color: White;
+}
+
+body {
+  background-color: black
+}
+
+p,
+li,
+a
+ {
+  font-size: 18px;
+  color: White;
+}
+
+.container {
+    background-image: url("../2016-09_Monts_Valin_by_night_05_resized.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    padding-bottom: 50%; /* 2:1 */
+}
+
+.content {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction    : column;
+  -ms-flex-direction          : column;
+  flex-direction                : column;
+  -webkit-justify-content   : center;
+  justify-content               : center;
+
+  position: absolute;
+  top: 0; bottom: 0; left: 30px; right: 30px;
+}
+
+@media only screen and (max-width: 480px) {
+
+    .container {
+        padding-bottom: 0;
+    }
+    .content {
+        position: relative;
+    top: 0; bottom: 0; left: 0; right: 0;
+        padding: 30px;
+    }
+
+}
+
+a {
+  text-decoration: none;
+}
